@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string carPart;
+    
+    cout << "Automotive Parts Dictionary" << endl;
+    cout << "Enter a car part: ";
+    cin >> carPart;
+    
+    if (carPart == "engine") {
+        cout << "Type: Powertrain Component" << endl;
+        cout << "Function: Converts fuel (gasoline/diesel) into mechanical energy through combustion, driving the crankshaft to produce rotational force." << endl;
+    } else if (carPart == "transmission") {
+        cout << "Type: Drivetrain Component" << endl;
+        cout << "Function: Transfers power from the engine to the wheels, allowing gear ratio changes for optimal speed and torque." << endl;
+    } else if (carPart == "brakes") {
+        cout << "Type: Safety System" << endl;
+        cout << "Function: Uses hydraulic pressure to apply friction (via brake pads or shoes) against rotors or drums, slowing or stopping the vehicle." << endl;
+    } else if (carPart == "steering") {
+        cout << "Type: Control System" << endl;
+        cout << "Function: Converts driver input (steering wheel rotation) into directional changes via a rack-and-pinion or recirculating-ball mechanism." << endl;
+    } else if (carPart == "suspension") {
+        cout << "Type: Chassis Component" << endl;
+        cout << "Function: Absorbs road shocks using springs, dampers (shock absorbers), and linkages to maintain tire contact and ride comfort." << endl;
+    } else if (carPart == "battery") {
+        cout << "Type: Electrical Component" << endl;
+        cout << "Function: Stores chemical energy and converts it to electrical energy to power the starter motor, ignition, and electronics." << endl;
+    
+    } else {
+        cout << "Part not found in database. Submit a request for addition." << endl;
+    }
+    
+    return 0;
+}
